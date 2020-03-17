@@ -16,9 +16,9 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|id|integer|null: false, foreign_key: true|
-|name|string|null: false|
-|email|string|null: false|
+|id|integer|null: false, unique: true, foreign_key: true|
+|name|string|null: false, unique: true|
+|email|string|null: false, unique: true|
 |password|string|null: false|
 
 ### Association
@@ -30,7 +30,7 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|id|integer|null: false, foreign_key: true|
+|id|integer|null: false, unique: true, foreign_key: true|
 |name|string|null: false|
 
 ### Association
